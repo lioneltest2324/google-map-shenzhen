@@ -1,0 +1,130 @@
+#map {
+  height: 100%;
+}
+
+/*
+ * Optional: Makes the sample page fill the window.
+ */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* HTML marker styles */
+.tag {
+background-color: #4285F4;
+border-radius: 8px;
+color: #FFFFFF;
+font-size: 12px;
+padding: 5px 7px;
+position: relative;
+}
+
+
+.tag::after {
+content: "";
+position: absolute;
+left: 50%;
+top: 100%;
+transform: translate(-50%, 0);
+width: 0;
+height: 0;
+border-left: 8px solid transparent;
+border-right: 8px solid transparent;
+border-top: 8px solid #4285F4;
+}
+
+.tag.highlight {
+background-color: #FFFFFF;
+
+box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+height: 140px;
+
+width: 190px;
+}
+
+.tag.highlight::after {
+border-top: 9px solid #FFFFFF;
+}
+
+.tag .raw-data-1 {
+display: none; /* 默认隐藏姓名框 */
+position: absolute;
+top: 15%;
+left: 30%;
+transform: translate(-50%, -50%);
+background-color: #FFFFFF;
+
+border-radius: 8px;
+z-index: 1; /* 确保姓名框在标记点内容之上 */
+}
+
+.tag.highlight .raw-data-1 {
+display: block; /* 高亮时显示姓名框 */
+}
+
+.data-1 {
+font-size: 13px;
+color: #333333;
+}
+
+.tag .raw-data-2 {
+display: none; /* 默认隐藏姓名框 */
+position: absolute;
+top: 40%;
+left: 30%;
+transform: translate(-27%, -50%);
+border-radius: 8px;
+z-index: 1; /* 确保姓名框在标记点内容之上 */
+}
+
+.tag.highlight .raw-data-2 {
+display: block; /* 高亮时显示姓名框 */
+}
+
+.data-2 {
+font-size: 13px;
+color: #333333;
+}
+
+.tag .raw-data-3 {
+  display: none; /* 默认隐藏姓名框 */
+  position: absolute;
+  top: 65%;
+  left: 24%;
+  transform: translate(-27%, -50%);
+  border-radius: 8px;
+  z-index: 1; /* 确保姓名框在标记点内容之上 */
+  }
+  
+  .tag.highlight .raw-data-3 {
+  display: block; /* 高亮时显示姓名框 */
+  }
+  
+  .data-3 {
+  font-size: 13px;
+  color: #333333;
+  }
+
+  .tag .raw-data-4 {
+    display: none; /* 默认隐藏姓名框 */
+    position: absolute;
+    top: 85%;
+    left: 26%;
+    transform: translate(-27%, -50%);
+    border-radius: 8px;
+    z-index: 1; /* 确保姓名框在标记点内容之上 */
+    }
+    
+    .tag.highlight .raw-data-4 {
+    display: block; /* 高亮时显示姓名框 */
+    }
+    
+    .data-4 {
+    font-size: 13px;
+    color: #333333;
+    }
+
